@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+    <head>
+        <title>BiTreeTest</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+    <body>
+	    <script src="./BiTree.js"></script>
+		<script>
+			var treeNode = null,
+				nodeList = ['A', 'B', 'C', null, null, 'D', 'E', null, 'G', null, null, 'F', null, null, null];
+			//getting a binary tree from nodeList
+			treeNode = TreeNode.createBiTree(nodeList);	
+            //traversing the tree of treeNode
+			treeNode.PreOrderTraverse();
+			treeNode.InOrderTraverse();
+			treeNode.PostOrderTraverse();			
+		</script>
+    </body>
+</html>
